@@ -1,7 +1,7 @@
 import QuestionCard from "./components/QuestionCard";
 import { Link } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div className="h-screen w-screen bg-[#6d6875] overflow-hidden flex">
       <div className=" w-[1000px] px-15 m-auto flex flex-row overflow-x-scroll rounded-3xl">
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
