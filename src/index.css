@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.life-questions-bg {
+  background-image: linear-gradient(
+    to right top,
+    #053714,
+    #1f6120,
+    #448e26,
+    #71bc24,
+    #a8eb12
+  );
+}
