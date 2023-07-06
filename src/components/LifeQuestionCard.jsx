@@ -3,7 +3,7 @@ import QuestionCard from "./QuestionCard";
 import { lifeQs } from "../assets/LifeQuestions";
 
 export default function LifeQuestionCard() {
-  const [randomQuestionIndex] = React.useState(() =>
+  const [randomQuestionIndex, setRandomQuestionIndex] = React.useState(() =>
     Math.floor(Math.random() * (lifeQs.length - 1))
   );
   return (

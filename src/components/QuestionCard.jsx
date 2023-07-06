@@ -1,4 +1,5 @@
 import React from "react";
+import RightArrow from "../assets/rightArrow.svg";
 
 export default function QuestionCard({ topic, content }) {
   return (
@@ -7,10 +8,18 @@ export default function QuestionCard({ topic, content }) {
     // To do this, we use the logical && operator in our main div, if the `topic` prop has been passed in, than we set the cursor to pointer.
     // We use a ternary operator for our font size in the p tag. If the content prop has been passed in, then we set the text-3x class, otherwise we do text-6xl
     <div
-      className={` h-[500px] w-[350px] shadow-lg mx-3 my-1 shrink-0 bg-[#edf6f9] rounded-lg flex items-center justify-center p-4 ${
+      className={` relative h-[500px] w-[350px] shadow-lg mx-3 my-1 shrink-0 bg-[#edf6f9] rounded-lg flex items-center justify-center p-4 ${
         topic && `cursor-pointer`
       } select-none`}
     >
+      {content && (
+        <div className="absolute right-5 top-3">
+          <img
+            src={RightArrow}
+            className="w-8 transition-all ease-in-out cursor-pointer hover:w-9"
+          />
+        </div>
+      )}
       <p
         className={`${
           content ? `text-3xl` : `text-6xl`
