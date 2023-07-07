@@ -1,5 +1,6 @@
 import React from "react";
 import RightArrow from "../assets/rightArrow.svg";
+import Heart from "../assets/heart.svg";
 
 export default function QuestionCard({ topic, content }) {
   return (
@@ -13,12 +14,20 @@ export default function QuestionCard({ topic, content }) {
       } select-none`}
     >
       {content && (
-        <div className="absolute right-5 top-3">
-          <img
-            src={RightArrow}
-            className="w-8 transition-all ease-in-out cursor-pointer hover:w-9"
-          />
-        </div>
+        <>
+          <div className="absolute right-5 top-3">
+            <img
+              src={RightArrow}
+              className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+            />
+          </div>
+          <div className="absolute left-5 top-3">
+            <img
+              src={Heart}
+              className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+            />
+          </div>
+        </>
       )}
       <p
         className={`${
