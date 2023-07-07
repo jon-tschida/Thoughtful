@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import ErrorPage from "./components/ErrorPage.jsx";
 import LifeQuestionCard from "./components/LifeQuestionCard.jsx";
+import RelationshipQuestionCard from "./components/RelationshipQuestionCard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
   {
     path: "/lifeQuestions",
     element: <LifeQuestionCard />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/relationshipQuestions",
+    element: <RelationshipQuestionCard />,
     errorElement: <ErrorPage />,
   },
 ]);

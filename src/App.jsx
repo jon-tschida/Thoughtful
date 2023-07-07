@@ -8,7 +8,9 @@ export default function App() {
         <Link to={"/lifeQuestions"}>
           <QuestionCard topic="Life" />
         </Link>
-        <QuestionCard topic="Relationship" />
+        <Link to={"/relationshipQuestions"}>
+          <QuestionCard topic="Relationship" />
+        </Link>
         <QuestionCard topic="Past" />
         <QuestionCard topic="Past" />
       </div>
