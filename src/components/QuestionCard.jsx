@@ -2,6 +2,7 @@ import React from "react";
 import RightArrow from "../assets/rightArrow.svg";
 import Heart from "../assets/heart.svg";
 
+// We have to pull some props in for our the "next arrow" to work, namely a Questions array and the setRandomQuestionIndex setter function.
 export default function QuestionCard({
   topic,
   content,
