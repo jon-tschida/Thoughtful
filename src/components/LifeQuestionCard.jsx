@@ -8,7 +8,11 @@ export default function LifeQuestionCard() {
   );
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen">
-      <QuestionCard content={lifeQs[randomQuestionIndex]} />
+      <QuestionCard
+        content={lifeQs[randomQuestionIndex]}
+        setRandomQuestionIndex={setRandomQuestionIndex}
+        Questions={lifeQs}
+      />
     </div>
   );
 }

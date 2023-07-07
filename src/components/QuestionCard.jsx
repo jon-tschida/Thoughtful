@@ -2,7 +2,16 @@ import React from "react";
 import RightArrow from "../assets/rightArrow.svg";
 import Heart from "../assets/heart.svg";
 
-export default function QuestionCard({ topic, content }) {
+export default function QuestionCard({
+  topic,
+  content,
+  setRandomQuestionIndex,
+  Questions,
+}) {
+  const handleNext = () =>
+    setRandomQuestionIndex(() =>
+      Math.floor(Math.random() * (Questions.length - 1))
+    );
   return (
     // We do a bit of conditional rendering here
     // We need to dispaly different styles for if the Question card component is being used on the main menu, or actually disaplaying questions.
@@ -17,6 +26,7 @@ export default function QuestionCard({ topic, content }) {
         <>
           <div className="absolute right-5 top-3">
             <img
+              onClick={handleNext}
               src={RightArrow}
               className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
             />
