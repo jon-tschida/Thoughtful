@@ -11,6 +11,7 @@ export default function RelationshipQuestionCard() {
       <QuestionCard
         content={RelationshipQs[randomQuestionIndex]}
         setRandomQuestionIndex={setRandomQuestionIndex}
+        randomQuestionIndex={randomQuestionIndex}
         Questions={RelationshipQs}
       />
     </div>

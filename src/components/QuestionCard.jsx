@@ -22,6 +22,11 @@ export default function QuestionCard({
       Questions[randomQuestionIndex],
     ]);
 
+  const handleUnfavorite = () =>
+    setFavoriteQuestions(
+      favoriteQuestions.filter((a) => a !== Questions[randomQuestionIndex])
+    );
+
   const handleNext = () =>
     setRandomQuestionIndex(() =>
       Math.floor(Math.random() * (Questions.length - 1))
@@ -51,15 +56,19 @@ export default function QuestionCard({
             />
           </div>
           <div className="absolute left-5 top-3">
-            <img
-              onClick={handleFavorite}
-              src={
-                favoriteQuestions.includes(Questions[randomQuestionIndex])
-                  ? HeartFilled
-                  : Heart
-              }
-              className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
-            />
+            {favoriteQuestions.includes(Questions[randomQuestionIndex]) ? (
+              <img
+                onClick={handleUnfavorite}
+                src={HeartFilled}
+                className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+              />
+            ) : (
+              <img
+                onClick={handleFavorite}
+                src={Heart}
+                className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+              />
+            )}
           </div>
         </>
       )}

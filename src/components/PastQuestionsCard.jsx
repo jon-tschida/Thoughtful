@@ -11,6 +11,7 @@ export default function PastQuestions() {
       <QuestionCard
         content={pastQs[randomQuestionIndex]}
         setRandomQuestionIndex={setRandomQuestionIndex}
+        randomQuestionIndex={randomQuestionIndex}
         Questions={pastQs}
       />
     </div>
