@@ -1,18 +1,36 @@
 import React from "react";
 import RightArrow from "../assets/rightArrow.svg";
 import Heart from "../assets/heart.svg";
+import HeartFilled from "../assets/heart-filled.svg";
 
 // We have to pull some props in for our the "next arrow" to work, namely a Questions array and the setRandomQuestionIndex setter function.
 export default function QuestionCard({
   topic,
   content,
   setRandomQuestionIndex,
+  randomQuestionIndex,
   Questions,
 }) {
+  const [favoriteQuestions, setFavoriteQuestions] = React.useState(() => {
+    if (!!localStorage.getItem("favoriteQuestions") === false) return [];
+    else return localStorage.getItem("favoriteQuestions").split(`,`);
+  });
+
+  const handleFavorite = () =>
+    setFavoriteQuestions((prevFavorites) => [
+      ...prevFavorites,
+      Questions[randomQuestionIndex],
+    ]);
+
   const handleNext = () =>
     setRandomQuestionIndex(() =>
       Math.floor(Math.random() * (Questions.length - 1))
     );
+  console.log(favoriteQuestions);
+
+  React.useEffect(() => {
+    localStorage.setItem(`favoriteQuestions`, favoriteQuestions);
+  }, [favoriteQuestions]);
   return (
     // We do a bit of conditional rendering here
     // We need to dispaly different styles for if the Question card component is being used on the main menu, or actually disaplaying questions.
@@ -34,7 +52,12 @@ export default function QuestionCard({
           </div>
           <div className="absolute left-5 top-3">
             <img
-              src={Heart}
+              onClick={handleFavorite}
+              src={
+                favoriteQuestions.includes(Questions[randomQuestionIndex])
+                  ? HeartFilled
+                  : Heart
+              }
               className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
             />
           </div>

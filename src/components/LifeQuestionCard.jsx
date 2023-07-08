@@ -11,6 +11,7 @@ export default function LifeQuestionCard() {
       <QuestionCard
         content={lifeQs[randomQuestionIndex]}
         setRandomQuestionIndex={setRandomQuestionIndex}
+        randomQuestionIndex={randomQuestionIndex}
         Questions={lifeQs}
       />
     </div>
