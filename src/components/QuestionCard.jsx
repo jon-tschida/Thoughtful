@@ -3,7 +3,8 @@ import RightArrow from "../assets/rightArrow.svg";
 import Heart from "../assets/heart.svg";
 import HeartFilled from "../assets/heart-filled.svg";
 
-// We have to pull some props in for our the "next arrow" to work, namely a Questions array and the setRandomQuestionIndex setter function.
+// We have to pull some props in
+// for our the "next arrow" to work, namely a Questions array and the setRandomQuestionIndex setter function.
 export default function QuestionCard({
   topic,
   content,
@@ -50,7 +51,7 @@ export default function QuestionCard({
             <img
               onClick={handleNext}
               src={RightArrow}
-              className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+              className="w-8 transition-all duration-300 cursor-pointer hover:scale-110"
             />
           </div>
           <div className="absolute left-5 top-3">
@@ -58,13 +59,13 @@ export default function QuestionCard({
               <img
                 onClick={handleUnfavorite}
                 src={HeartFilled}
-                className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+                className="w-8 transition-all duration-300 cursor-pointer hover:scale-110"
               />
             ) : (
               <img
                 onClick={handleFavorite}
                 src={Heart}
-                className="w-8 transition-all ease-in-out cursor-pointer hover:scale-110"
+                className="w-8 transition-all duration-300 cursor-pointer hover:scale-110"
               />
             )}
           </div>
