@@ -1,6 +1,7 @@
 import React from "react";
 import QuestionCard from "./QuestionCard";
 import { RelationshipQs } from "../assets/RelationshipQuestions";
+import Back from "./Back";
 
 export default function RelationshipQuestionCard() {
   const [randomQuestionIndex, setRandomQuestionIndex] = React.useState(() =>
@@ -8,6 +9,7 @@ export default function RelationshipQuestionCard() {
   );
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen">
+      <Back />
       <QuestionCard
         content={RelationshipQs[randomQuestionIndex]}
         setRandomQuestionIndex={setRandomQuestionIndex}

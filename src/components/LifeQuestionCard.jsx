@@ -1,6 +1,7 @@
 import React from "react";
 import QuestionCard from "./QuestionCard";
 import { lifeQs } from "../assets/LifeQuestions";
+import Back from "./Back";
 
 export default function LifeQuestionCard() {
   const [randomQuestionIndex, setRandomQuestionIndex] = React.useState(() =>
@@ -8,6 +9,7 @@ export default function LifeQuestionCard() {
   );
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen">
+      <Back />
       <QuestionCard
         content={lifeQs[randomQuestionIndex]}
         setRandomQuestionIndex={setRandomQuestionIndex}
