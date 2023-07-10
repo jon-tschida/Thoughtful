@@ -14,6 +14,9 @@ export default function App() {
         <Link to={"/pastQuestions"}>
           <QuestionCard topic="Past" />
         </Link>
+        <Link to={"/favoriteQuestions"}>
+          <QuestionCard topic="Favorites" />
+        </Link>
       </div>
     </div>
   );

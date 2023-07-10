@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import LifeQuestionCard from "./components/LifeQuestionCard.jsx";
 import RelationshipQuestionCard from "./components/RelationshipQuestionCard.jsx";
 import PastQuestionsCard from "./components/PastQuestionsCard.jsx";
+import FavoriteQuestionsCard from "./components/FavoriteQuestionsCard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/pastQuestions",
     element: <PastQuestionsCard />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/favoriteQuestions",
+    element: <FavoriteQuestionsCard />,
     errorElement: <ErrorPage />,
   },
 ]);

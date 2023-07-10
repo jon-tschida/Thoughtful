@@ -28,9 +28,7 @@ export default function QuestionCard({
     );
 
   const handleNext = () =>
-    setRandomQuestionIndex(() =>
-      Math.floor(Math.random() * (Questions.length - 1))
-    );
+    setRandomQuestionIndex(() => Math.floor(Math.random() * Questions.length));
   console.log(favoriteQuestions);
 
   React.useEffect(() => {
