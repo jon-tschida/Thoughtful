@@ -20,11 +20,11 @@ export default function FavoriteQuestionsCard() {
       <Back />
       {/* If we don't have any favorites yet, then we display this div */}
       {favoriteQuestions.length === 0 && (
-        <div className="flex flex-col items-center justify-center w-screen h-screen bg-zinc-200">
-          <h3 className="mb-5 text-5xl font-bold">
+        <div className="flex flex-col items-center justify-center w-screen h-screen bg-zinc-800">
+          <h3 className="mb-5 text-5xl font-bold text-slate-200">
             No favorite questions yet!
           </h3>
-          <p className="mb-5">
+          <p className="mb-5 text-zinc-400">
             Use the heart icon on any of the questions to add it to your
             favorites!
           </p>

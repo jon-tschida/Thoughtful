@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function App() {
   return (
     <>
-      <div className="flex w-screen h-screen overflow-hidden app-bg">
+      <div className="flex w-screen h-screen overflow-hidden bg-zinc-800">
         <div className="relative w-[1000px] p-1 m-auto flex flex-row overflow-x-scroll overflow-y-hidden rounded-3xl drop-shadow-2xl backdrop-blur">
           <Link to={"/lifeQuestions"}>
             <QuestionCard topic="Life" />

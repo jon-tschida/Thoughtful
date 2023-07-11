@@ -31,8 +31,3 @@
     rgba(23, 24, 53, 1) 67%
   );
 }
-
-.app-bg {
-  background: #010101;
-  background: radial-gradient(at center, #010101, #343434);
-}
