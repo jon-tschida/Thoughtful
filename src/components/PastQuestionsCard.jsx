@@ -8,7 +8,7 @@ export default function PastQuestions() {
     Math.floor(Math.random() * (pastQs.length - 1))
   );
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div className="flex flex-col items-center justify-center w-screen h-screen past-question-bg">
       <Back />
       <QuestionCard
         content={pastQs[randomQuestionIndex]}

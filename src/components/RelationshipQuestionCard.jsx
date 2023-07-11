@@ -8,7 +8,7 @@ export default function RelationshipQuestionCard() {
     Math.floor(Math.random() * (RelationshipQs.length - 1))
   );
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div className="flex flex-col items-center justify-center w-screen h-screen relationship-question-bg">
       <Back />
       <QuestionCard
         content={RelationshipQs[randomQuestionIndex]}
