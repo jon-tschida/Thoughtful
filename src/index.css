@@ -33,6 +33,6 @@
 }
 
 .app-bg {
-  background-image: url("src/assets/bg-test.jpeg");
-  background-size: cover;
+  background: #010101;
+  background: radial-gradient(at center, #010101, #343434);
 }
