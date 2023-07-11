@@ -16,7 +16,7 @@ export default function FavoriteQuestionsCard() {
   }, [favoriteQuestions]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div className="flex flex-col items-center justify-center w-screen h-screen bg-zinc-800">
       <Back />
       {/* If we don't have any favorites yet, then we display this div */}
       {favoriteQuestions.length === 0 && (
@@ -31,7 +31,7 @@ export default function FavoriteQuestionsCard() {
         </div>
       )}
       {/* End "no favorites" div */}
-      <div className="relative w-[1000px] p-1 m-auto flex flex-row overflow-x-scroll overflow-y-hidden rounded-3xl bg-black bg-opacity-20 shadow-md shadow-black">
+      <div className="relative w-[1000px] p-1 m-auto flex flex-row overflow-x-scroll overflow-y-hidden">
         {favoriteQuestions.map((favoriteQuestion, i) => {
           return (
             <div
