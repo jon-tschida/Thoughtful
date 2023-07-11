@@ -8,7 +8,7 @@ export default function LifeQuestionCard() {
     Math.floor(Math.random() * (lifeQs.length - 1))
   );
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div className="flex flex-col items-center justify-center w-screen h-screen life-question-bg">
       <Back />
       <QuestionCard
         content={lifeQs[randomQuestionIndex]}
