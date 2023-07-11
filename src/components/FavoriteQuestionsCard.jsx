@@ -1,5 +1,4 @@
 import React from "react";
-import QuestionCard from "./QuestionCard";
 import Back from "./Back";
 import HeartFilled from "../assets/heart-filled.svg";
 
