@@ -30,7 +30,6 @@ export default function QuestionCard({
 
   const handleNext = () =>
     setRandomQuestionIndex(() => Math.floor(Math.random() * Questions.length));
-  console.log(favoriteQuestions);
 
   React.useEffect(() => {
     localStorage.setItem(`favoriteQuestions`, favoriteQuestions);
