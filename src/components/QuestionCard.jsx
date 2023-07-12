@@ -42,7 +42,7 @@ export default function QuestionCard({
     <div
       className={` relative h-[500px] w-[350px] hover:drop-shadow-3xl transition-all duration-400 mx-3 my-1 shrink-0 bg-gray-200 rounded-lg flex items-center justify-center p-4 ${
         topic && `cursor-pointer`
-      } select-none`}
+      } select-none md:h-[400px] md:w-[300px] sm:h-[300px] sm:w-[200px]`}
     >
       {content && (
         <>
@@ -73,7 +73,7 @@ export default function QuestionCard({
       <p
         className={`${
           content ? `text-3xl` : `text-6xl`
-        } font-light text-black h-fit text-center`}
+        } font-light text-black h-fit text-center sm:text-3xl md:text-4xl`}
       >
         {topic || content}
       </p>
