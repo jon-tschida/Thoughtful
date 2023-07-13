@@ -1,6 +1,7 @@
 import React from "react";
 import Back from "./Back";
 import HeartFilled from "../assets/heart-filled.svg";
+import NoFavoritesFallback from "./NoFavoritesFallback";
 
 export default function FavoriteQuestionsCard() {
   const [favoriteQuestions, setFavoriteQuestions] = React.useState(() => {
@@ -16,42 +17,36 @@ export default function FavoriteQuestionsCard() {
   }, [favoriteQuestions]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen bg-zinc-800">
+    <>
       <Back />
-      {/* If we don't have any favorites yet, then we display this div */}
-      {favoriteQuestions.length === 0 && (
-        <div className="flex flex-col items-center justify-center w-screen h-screen bg-zinc-800">
-          <h3 className="mb-5 text-5xl font-bold text-slate-200">
-            No favorite questions yet!
-          </h3>
-          <p className="mb-5 text-zinc-400">
-            Use the heart icon on any of the questions to add it to your
-            favorites!
-          </p>
+      {/* We use a ternary operator to display either the NoFavoritesFallback  */}
+      {favoriteQuestions.length === 0 ? (
+        <NoFavoritesFallback />
+      ) : (
+        <div className="flex flex-col items-center justify-center w-screen h-screen overflow-y-hidden bg-zinc-800">
+          <div className="relative flex flex-row w-screen p-10 m-auto overflow-x-scroll overflow-y-hidden sm:w-screen">
+            {favoriteQuestions.map((favoriteQuestion, i) => {
+              return (
+                <div
+                  key={i}
+                  className="relative h-[500px] w-[350px] mx-3 my-1 shrink-0 bg-[#edf6f9] rounded-lg flex items-center justify-center p-4 select-none md:h-[400px] md:w-[300px] sm:h-[300px] sm:w-[200px]"
+                >
+                  <div className="absolute left-5 top-3">
+                    <img
+                      onClick={() => handleUnfavorite(favoriteQuestion)}
+                      src={HeartFilled}
+                      className="w-8 transition-all duration-300 cursor-pointer hover:scale-110"
+                    />
+                  </div>
+                  <p className="text-3xl font-light text-center text-black h-fit">
+                    {favoriteQuestion}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
-      {/* End "no favorites" div */}
-      <div className="relative w-[1000px] p-1 m-auto flex flex-row overflow-x-scroll overflow-y-hidden">
-        {favoriteQuestions.map((favoriteQuestion, i) => {
-          return (
-            <div
-              key={i}
-              className="relative h-[500px] w-[350px] shadow-lg mx-3 my-1 shrink-0 bg-[#edf6f9] rounded-lg flex items-center justify-center p-4 select-none"
-            >
-              <div className="absolute left-5 top-3">
-                <img
-                  onClick={() => handleUnfavorite(favoriteQuestion)}
-                  src={HeartFilled}
-                  className="w-8 transition-all duration-300 cursor-pointer hover:scale-110"
-                />
-              </div>
-              <p className="text-3xl font-light text-center text-black h-fit">
-                {favoriteQuestion}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    </>
   );
 }
