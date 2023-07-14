@@ -1,11 +1,24 @@
+import React from "react";
 import QuestionCard from "./components/QuestionCard";
 import WelcomeModal from "./components/WelcomeModal";
 import { Link } from "react-router-dom";
 
 export default function App() {
+  const [closedModal, setClosedModal] = React.useState(() => {
+    if (JSON.parse(localStorage.getItem("modalClosed")) === true) return true;
+    else return false;
+  });
+  React.useEffect(() => {
+    localStorage.setItem(`modalClosed`, closedModal);
+  }, [closedModal]);
   return (
     <>
-      <WelcomeModal />
+      {/* Display our welcomeModal only on first visit. 
+      When the user hits the close button in the WelcomeModal, we set the `closedModal` state to true and save that in localstorage.
+      Our state is initialized with the default value found in the localstorage, either false or true. 
+      If closedModal is true, then we don't display WelcomeModal and just display the site content. 
+    */}
+      {closedModal || <WelcomeModal setClosedModal={setClosedModal} />}
       <div className="flex w-screen h-screen overflow-hidden bg-zinc-800">
         <div className="relative w-[1000px] p-1 m-auto flex flex-row overflow-x-scroll overflow-y-hidden rounded-3xl drop-shadow-2xl backdrop-blur">
           <Link to={"/lifeQuestions"}>
