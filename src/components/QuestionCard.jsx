@@ -73,7 +73,7 @@ export default function QuestionCard({
       <p
         className={`${
           content ? `text-3xl` : `text-6xl`
-        } font-light text-black h-fit text-center sm:text-2xl md:text-4xl`}
+        } font-light text-black h-fit text-center sm:text-[24px] md:text-3xl lg:text-4xl`}
       >
         {topic || content}
       </p>
