@@ -40,9 +40,9 @@ export default function QuestionCard({
     // To do this, we use the logical && operator in our main div, if the `topic` prop has been passed in, than we set the cursor to pointer.
     // We use a ternary operator for our font size in the p tag. If the content prop has been passed in, then we set the text-3x class, otherwise we do text-6xl
     <div
-      className={` relative h-[500px] w-[350px] hover:drop-shadow-3xl transition-all duration-400 mx-3 my-1 shrink-0 bg-gray-200 rounded-lg flex items-center justify-center p-4 ${
+      className={` relative lg:h-[500px] lg:w-[350px] hover:drop-shadow-3xl transition-all duration-400 mx-3 my-1 shrink-0 bg-gray-200 rounded-lg flex items-center justify-center p-4 ${
         topic && `cursor-pointer`
-      } select-none md:h-[400px] md:w-[300px] sm:h-[300px] sm:w-[200px]`}
+      } select-none md:h-[400px] md:w-[300px] sm:h-[300px] sm:w-[200px] 2xl:w-[400px] 2xl:h-[550px]`}
     >
       {content && (
         <>
@@ -73,7 +73,7 @@ export default function QuestionCard({
       <p
         className={`${
           content ? `text-3xl` : `text-6xl`
-        } font-light text-black h-fit text-center sm:text-[24px] md:text-3xl lg:text-3xl`}
+        } font-light text-black h-fit text-center sm:text-[24px] md:text-3xl lg:text-3xl 2xl:text-5xl`}
       >
         {topic || content}
       </p>
