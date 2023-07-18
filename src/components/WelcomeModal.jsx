@@ -6,7 +6,7 @@ export default function WelcomeModal({ setClosedModal }) {
   const handleClose = () => setClosedModal((prevState) => !prevState);
   return (
     <div className="absolute z-30 flex w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm">
-      <div className="w-[600px] m-auto rounded-sm  h-[300px] bg-stone-600 relative p-1">
+      <div className="lg:w-[600px] m-auto rounded-sm  lg:h-[300px] bg-stone-600 relative p-1 sm:w-[300px]">
         {/* Close button and pulse effect */}
         <div className="absolute w-4 h-4 duration-1000 border border-black cursor-pointer top-2 right-2 rounded-xl animate-ping"></div>
         <img
@@ -15,11 +15,11 @@ export default function WelcomeModal({ setClosedModal }) {
           className="absolute w-4 cursor-pointer top-2 right-2"
         />
         {/* End close button and pulse effect */}
-        <div className="flex flex-row w-full h-full ">
-          <div className="flex items-center justify-center w-2/5 bg-white ">
+        <div className="flex w-full h-full lg:flex-row sm:flex-col">
+          <div className="flex items-center justify-center bg-white lg:w-2/5 sm:w-ful ">
             <img src={Thoughtful} className="w-[200px]" />
           </div>
-          <div className="flex flex-col items-center justify-center w-3/5 px-3 text-center text-white">
+          <div className="flex flex-col items-center justify-center px-3 text-center text-white lg:w-3/5 sm:w-ful">
             <h3 className="text-2xl">
               <b>Welcome to Thoughtful</b>
             </h3>
