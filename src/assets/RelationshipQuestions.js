@@ -5,6 +5,7 @@ export const RelationshipQs = [
   "What was our best date?",
   "How do you express your feelings?",
   "If anything, what'd your parents teach you about relationships?",
+  "What does intamicy mean to you?",
 ];
 
 export default { RelationshipQs };
