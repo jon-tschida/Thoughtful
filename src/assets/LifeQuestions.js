@@ -14,5 +14,6 @@ export const lifeQs = [
   "What is something frivolous that you don't mind spending money on?",
   "What is one thing you'd like to get better at over the next year?",
   "If you were to die tomorrow, what would you do today?",
+  "What's your first memory?",
 ];
 export default { lifeQs };
