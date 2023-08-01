@@ -15,6 +15,7 @@ export const RelationshipQs = [
   "Are there any conversations we've been putting off?",
   "Would you say you are the jealous type?",
   "What is your favorite compliment?",
+  "what is something you wish we did together more?",
 ];
 
 export default { RelationshipQs };
