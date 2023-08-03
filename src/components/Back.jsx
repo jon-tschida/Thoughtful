@@ -1,5 +1,5 @@
 import React from "react";
-import BackArrow from "../assets/BackArrow.svg";
+import BackArrow from "../assets/backArrow.svg";
 import { Link } from "react-router-dom";
 
 export default function Back() {
