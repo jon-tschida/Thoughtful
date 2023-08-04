@@ -2,6 +2,7 @@ import React from "react";
 import QuestionCard from "./components/QuestionCard";
 import WelcomeModal from "./components/WelcomeModal";
 import { Link } from "react-router-dom";
+import { version } from "../package.json";
 
 export default function App() {
   const [closedModal, setClosedModal] = React.useState(() => {
@@ -34,7 +35,7 @@ export default function App() {
             <QuestionCard topic="Favorites" />
           </Link>
         </div>
-        <div className="absolute w-screen text-center bottom-4 text-zinc-600">
+        <div className="absolute w-screen text-sm font-thin text-center bottom-4 text-zinc-600">
           <p>
             Created by{" "}
             <a
@@ -42,7 +43,15 @@ export default function App() {
               rel="noreferrer"
               target="_blank"
             >
-              <i>Jon Tschida</i>{" "}
+              <i>Jon Tschida</i>
+            </a>{" "}
+            -{" "}
+            <a
+              href="https://github.com/jon-tschida/Thoughtful/tree/main"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i>version {version}</i>
             </a>
           </p>
         </div>
