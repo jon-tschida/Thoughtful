@@ -41,6 +41,17 @@ export const RelationshipQs = [
   "Do we work as a team when making decisions?",
   "When was the last time our relationship pushed you outside your comfort zone?",
   "What's something you thought when we first met that you now longer believe to be true?",
+  "Tell me about a time when you didn't feel supported by me?",
+  "If our relationship ended tomorrow what would you miss the most?",
+  "Describe some times or areas where you find it difficult to be open with me.",
+  "Would you prefer we share a bank account or keep seperate?",
+  "What is something I do all the time that drive you nuts?",
+  "What is something that you've never admitted to anyone else?",
+  "What do you hate most about the way I drive?",
+  "Do you see any similarities between our relationship and your parents?",
+  "What is the most romantic thing I've ever done for you?",
+  "On a scale of 1-10 how comfortable are you with PDA?",
+  "What is your favorite sexual memory of us?",
 ];
 
 export default { RelationshipQs };
