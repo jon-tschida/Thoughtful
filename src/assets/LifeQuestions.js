@@ -48,6 +48,9 @@ export const lifeQs = [
   "You have one week to spend a million dollars how are you spending it?",
   "Of my friends who do you feel has the most negative influence on me?",
   "What's an area or thing about me you want to know more about?",
-  "",
+  "Is it important for you to live close to family?",
+  "What bounderies can we set to protect our relationship from being damaged by technology?",
+  "What is your biggets pet peeve?",
+  "On a scale of 1-10 how messy are you to live with?",
 ];
 export default { lifeQs };

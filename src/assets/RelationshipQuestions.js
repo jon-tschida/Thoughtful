@@ -52,6 +52,16 @@ export const RelationshipQs = [
   "What is the most romantic thing I've ever done for you?",
   "On a scale of 1-10 how comfortable are you with PDA?",
   "What is your favorite sexual memory of us?",
+  "Waht do you feel we need to work on most in our relationship?",
+  "What you really need to understand about me and sex is...",
+  "What are the deal breakers than would make you reconsider our relationship?",
+  "Share one thing I've done this month that has made the month better.",
+  "On a scale of 1-10 how nervouse would be if I looked through your phone?",
+  "How do you describe me to other people?",
+  "How did I make you smile this week?",
+  "Which couple in our life do you want to be the most like?",
+  "Which couple in our life do you want to be the least like?",
+  "How can I make you more confident in our future together?",
 ];
 
 export default { RelationshipQs };

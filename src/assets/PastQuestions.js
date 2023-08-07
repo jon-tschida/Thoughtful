@@ -49,7 +49,12 @@ export const pastQs = [
   "What have been the highs and lows from the last year?",
   "When was the last time a scent reminded you of a memory?",
   "When was the last time you cried at a movie?",
-  "",
+  "What is the most illegal thing you've done and gotten away with?",
+  "Describe a situation where you lost trust in someone close to you.",
+  "Tell me about the family you imagined creating when you were little.",
+  "If you could pick one year in your life to do over which would it be?",
+  "If you could pick one year in your life to watch a movie about what would it be?",
+  "How would your ex-partner describe you?",
 ];
 
 export default {
