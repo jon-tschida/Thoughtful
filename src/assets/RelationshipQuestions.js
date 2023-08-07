@@ -16,6 +16,11 @@ export const RelationshipQs = [
   "Would you say you are the jealous type?",
   "What is your favorite compliment?",
   "what is something you wish we did together more?",
+  "If you knew someone was cheating on their SO, would you tell their SO?",
+  "What do you love most about yourself?",
+  "How do you feel about having kids?",
+  "What would you do if your partner became physically disabled?",
+  "What scares you?",
 ];
 
 export default { RelationshipQs };

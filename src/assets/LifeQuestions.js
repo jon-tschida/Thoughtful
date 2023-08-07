@@ -15,5 +15,8 @@ export const lifeQs = [
   "What is one thing you'd like to get better at over the next year?",
   "If you were to die tomorrow, what would you do today?",
   "What's your first memory?",
+  "What things were you told growing up that were just plain lies?",
+  "What is the worst advice you've ever recieved?",
+  "What's the most dangerous thing you've ever done?",
 ];
 export default { lifeQs };
