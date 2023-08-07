@@ -24,6 +24,13 @@ export const pastQs = [
   "What was your worst breakup?",
   "Is there anyone from your past that still comes to mind sometimes?",
   "You get one do-over, how are you spending it?",
+  "Where any of your past relationships toxic?",
+  "When was the last time you cried and why?",
+  "What is something you'd like to be forgiven for?",
+  "Someone is writing your biography, what would be the title?",
+  "What were the major turning points in your ife that got you here?",
+  "How has your childhood/upbringing shaped you?",
+  "",
 ];
 
 export default {
