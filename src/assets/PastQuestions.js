@@ -22,6 +22,8 @@ export const pastQs = [
   "How did you meet your ex?",
   "Are you in touch with any of your ex's?",
   "What was your worst breakup?",
+  "Is there anyone from your past that still comes to mind sometimes?",
+  "You get one do-over, how are you spending it?",
 ];
 
 export default {

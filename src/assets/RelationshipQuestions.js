@@ -21,6 +21,8 @@ export const RelationshipQs = [
   "How do you feel about having kids?",
   "What would you do if your partner became physically disabled?",
   "What scares you?",
+  "How do you feel about making less money than your partner?",
+  "How important are finances in a relationship to you?",
 ];
 
 export default { RelationshipQs };

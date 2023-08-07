@@ -18,5 +18,6 @@ export const lifeQs = [
   "What things were you told growing up that were just plain lies?",
   "What is the worst advice you've ever recieved?",
   "What's the most dangerous thing you've ever done?",
+  "You get one do-over, how are you spending it?",
 ];
 export default { lifeQs };
