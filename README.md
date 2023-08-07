@@ -13,3 +13,8 @@ This site is designed to help spark thoughtful conversations. Just select a topi
 - A few reports of spelling errors, fixed these up.
 - Added a sitemap.xml
 - Added version number to bottom of homepage
+
+### Version 1.0.2
+
+- Added basic security headers
+- Added lots of questions
