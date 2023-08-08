@@ -18,3 +18,8 @@ This site is designed to help spark thoughtful conversations. Just select a topi
 
 - Added basic security headers
 - Added lots of questions
+
+### Version 1.1.2
+
+- Added some conditional rendering for our error page
+- Added the ability for users to submit bug reports when they run into errors
