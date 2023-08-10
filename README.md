@@ -23,3 +23,7 @@ This site is designed to help spark thoughtful conversations. Just select a topi
 
 - Added some conditional rendering for our error page
 - Added the ability for users to submit bug reports when they run into errors
+
+### Version 1.1.3
+
+- Added backlink to the homepage on the JS error page.

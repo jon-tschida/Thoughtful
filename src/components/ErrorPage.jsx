@@ -2,7 +2,6 @@ import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
 export default function ErrorPage() {
   const error = useRouteError();
-  console.log(error.status === 404);
 
   return error.status === 404 ? (
     <div className="flex flex-col items-center justify-center w-screen h-screen bg-zinc-200">
@@ -41,6 +40,14 @@ export default function ErrorPage() {
           <i>Submit Bug Report</i>
         </a>
       </p>
+      <Link to={"/"}>
+        <br />
+        <p className="">
+          <i className="p-2 transition-all border border-solid rounded-md border-zinc-700 bg-zinc-50 hover:bg-zinc-200">
+            Back to topics
+          </i>
+        </p>
+      </Link>
     </div>
   );
 }
