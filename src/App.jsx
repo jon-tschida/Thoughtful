@@ -3,17 +3,17 @@ import QuestionCard from "./components/QuestionCard";
 import WelcomeModal from "./components/WelcomeModal";
 import { Link } from "react-router-dom";
 import { version } from "../package.json";
+import questionMark from "./assets/questionMark.svg";
 
 export default function App() {
-  const [closedModal, setClosedModal] = React.useState(() => {
-    if (JSON.parse(localStorage.getItem("modalClosed")) === true) return true;
-    else return false;
-  });
-  React.useEffect(() => {
-    localStorage.setItem(`modalClosed`, closedModal);
-  }, [closedModal]);
+  const [closedModal, setClosedModal] = React.useState(true);
   return (
     <>
+      <img
+        src={questionMark}
+        className="absolute cursor-pointer left-5 top-5"
+        onClick={() => setClosedModal((prevState) => !prevState)}
+      />
       {/* Display our welcomeModal only on first visit. 
       When the user hits the close button in the WelcomeModal, we set the `closedModal` state to true and save that in localstorage.
       Our state is initialized with the default value found in the localstorage, either false or true. 

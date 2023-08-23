@@ -12,7 +12,7 @@ export default function WelcomeModal({ setClosedModal }) {
         <img
           src={Close}
           onClick={handleClose}
-          className="absolute w-4 cursor-pointer top-2 right-2"
+          className="absolute z-40 w-4 cursor-pointer top-2 right-2"
         />
         {/* End close button and pulse effect */}
         <div className="flex w-full h-full lg:flex-row sm:flex-col">
