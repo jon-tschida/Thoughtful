@@ -28,7 +28,7 @@ export const pastQs = [
   "When was the last time you cried and why?",
   "What is something you'd like to be forgiven for?",
   "Someone is writing your biography what would be the title?",
-  "What were the major turning points in your ife that got you here?",
+  "What were the major turning points in your life that got you here?",
   "How has your childhood/upbringing shaped you?",
   "What are some things you liked and disliked in previous relationships?",
   "Reflect on the last 3 years how would you like the next three to be different?",
