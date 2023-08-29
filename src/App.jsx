@@ -4,6 +4,7 @@ import WelcomeModal from "./components/WelcomeModal";
 import { Link } from "react-router-dom";
 import { version } from "../package.json";
 import questionMark from "./assets/questionMark.svg";
+import GoogleAdsense from "./components/GoogleAdsense";
 
 export default function App() {
   const [closedModal, setClosedModal] = React.useState(true);
@@ -35,6 +36,7 @@ export default function App() {
             <QuestionCard topic="Favorites" />
           </Link>
         </div>
+        <GoogleAdsense dataAdSlot="5712181705"/>
         <div className="absolute w-screen text-sm font-thin text-center bottom-4 text-zinc-600">
           <p>
             Created by{" "}
